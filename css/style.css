@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif
@@ -33,12 +31,12 @@
 .nav-link:active{
     color: rgb(59, 59, 155);
 }
-
-
+/* Boton de busqueda */
 #boton{
     text-decoration: none;
     color: green;
 }
+
 /* Logo de la navbar*/
 #logo {
     width: 50px;
@@ -58,6 +56,7 @@
     justify-content: center;
     align-items: center;
 }
+
 #logoPepes {
     width: 180px;
     height: 180px;
@@ -85,14 +84,13 @@
 }
 
 /* BOTINES */
-
 .productos__contenedor {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+/* Marca botines */
 .productos__contenedor__marca {
     font-size: 15px;
     margin: 10px;
@@ -102,8 +100,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
-
+/* Contenedor modelos botines */
 .productos__contenedor__modelos__botin {
     display: flex;
     flex-direction: column;
@@ -117,7 +114,6 @@
     margin: 1px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
-
 /* Imagenes de los botines*/
 .productos__contenedor__modelos__botin img {
     width: 150px;
@@ -126,8 +122,6 @@
 }
 
 /* MEDIAS */
-/* Titulo */
-
 .productos__contenedor__accesorio {
     font-size: 20px;
     margin-top: 20px;
@@ -152,6 +146,7 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
+/* Imagenes de las medias */
 .productos__contenedor__modelos__medias img {
     width: 150px;
     height: 150px;
@@ -182,6 +177,7 @@
     height: 150px;
 }
 
+/* Boton añadir al carrito */
 .carrito{
     background-color: rgb(9, 42, 85);
     color: rgb(255, 255, 255);
@@ -223,6 +219,7 @@
     padding: 20px;
     margin: 10px;
 }
+
 /* Footer */
 .pieDePagina {
     background-color: rgb(255, 255, 255);
@@ -233,12 +230,13 @@
     margin: 15px;
     text-align: center;
 }
-
+/* Parrafo del footer */
 .pieDePagina p {
     font-size: 18px;
     text-align: center;
 }
 
+/* Logo del footer */
 #pieDePagina__logo {
     height: 60px;
     width: 60px;
@@ -247,15 +245,8 @@
     padding: 10px;
 }
 
+/* Adaptable a computadoras */
 @media (min-width: 1024px) {
-    .grid-container {
-        grid-template:
-            "header  header header" 100px
-            "navbar  main   sidebar" auto
-            "footer  footer footer" 100px /
-            200px auto 200px;
-    }   
-
     /* Barra de navegacion */
     .navbar {
         padding: 12px;
@@ -266,12 +257,6 @@
     .navbar-collapse {
         align-items: center;
         justify-content: space-between;
-    }
-
-    /* h2 del main */
-    .hero-principal h2 {
-        font-size: 50px;
-        text-align: center;
     }
 
     .logo-main {
@@ -289,18 +274,17 @@
     /* BOTINES */
     /* Marca botin */
     .productos__contenedor__marca {
-        font-size: 10px;
-        margin-top: 5px;
+        margin-top: 20px;
     }
 
     /* Modelo botin */
-
     .productos__contenedor__modelos__botin {
         font-size: 30px;
         margin: 5px;
         padding: 1px;
     }
 
+    /* Imagenes botines */
     .productos__contenedor__modelos__botin img {
         width: 300px;
         height: 300px;
@@ -313,10 +297,8 @@
         width: 200px;
         text-align: center;
     }
-
     /* MEDIAS */
 
-    /* Titulo */
     .productos__contenedor__accesorio {
         font-size: 50px;
     }
@@ -324,7 +306,7 @@
     .productos__contenedor__modelos__medias {
         margin: 2px;
     }
-
+    /* Imagenes medias */
     .productos__contenedor__modelos__medias img {
         width: 300px;
         height: 300px;
@@ -372,17 +354,7 @@
         height: 120px;
     }
 
-    /* Formulario para Iniciar sesion/Registrarse */
-    .form {
-        font-size: 40px;
-        padding: 30px;
-    }
-
-    .form div {
-        font-size: 40px;
-        padding: 20px;
-    }
-    
+    /* Footer */
     .pieDePagina p {
         font-size: 23px;
     }

@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesion</title>
     <link rel="shortcut icon" href="../img/logoPepes.png" type="image/jpeg">
-        <!-- Bootsrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-
-    <!-- estilos -->
+    <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<header class="header">
+    <!-- Header -->
+    <header>
+    <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-md navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html"><img src="/img/logoPepes.png" id="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar-toggler">
+                <!-- Menu -->
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
@@ -39,11 +42,14 @@
                         <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                     </li>
                 </ul>
+                <!-- Barra de busqueda -->
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar modelo.." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit"><a href="../pages/botines.html" id="boton">Buscar</a></button>
+                    <button class="btn btn-outline-success" type="submit"><a href="../pages/botines.html"
+                            id="boton">Buscar</a></button>
                 </form>
-                <ul class="navbar-nav" >
+                <!-- Iniciar  -->
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/formulario.html">Iniciar Sesion</a>
                     </li>
@@ -56,17 +62,14 @@
     </nav>
 </header>
 
-
-
-<main class="main__formulario">
+<main>
     <section class="container">
         <div class="row">
             <div class="col-12">
                 <form>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">No compartiremos tu dirección de email.</div>
                     </div>
                     <div class="mb-3">
