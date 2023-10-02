@@ -1,0 +1,390 @@
+
+
+* {
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+/* Barra de navegación */
+.navbar {
+    padding: 10px;
+    background-color: #edf0f5;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: rgb(13, 91, 46);
+}
+
+
+#boton{
+    text-decoration: none;
+    color: green;
+}
+/* Logo de la navbar*/
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* MAIN */
+.index__main {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Logo del main */
+.hero-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logoPepes {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Informacion en el index sobre Pepes */
+.index__main__informacion {
+    font-size: 25px;
+    color: rgb(46, 80, 118);
+    text-align: center;
+    margin: 10px;
+}
+
+/* Contenedor de Botines, Medias y Canilleras */
+.productos__contenedor__modelos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    flex-flow: wrap;
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* BOTINES */
+
+.productos__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos__contenedor__marca {
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.productos__contenedor__modelos__botin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px rgb(172, 167, 167);
+    border-radius: 10px;
+    padding: 2px;
+    margin: 1px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+/* Imagenes de los botines*/
+.productos__contenedor__modelos__botin img {
+    width: 150px;
+    height: 150px;
+    flex-wrap: wrap;
+}
+
+/* MEDIAS */
+/* Titulo */
+
+.productos__contenedor__accesorio {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productos__contenedor__modelos__medias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 2px;
+    margin: 2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+.productos__contenedor__modelos__medias img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Titulo modelo media */
+.productos__contenedor__modelos__medias p {
+    font-size: 15px;
+}
+
+.productos__contenedor__modelos__canilleras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 2px;
+    margin: 2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+/* Imagenes canilleras */
+.productos__contenedor__modelos__canilleras img {
+    width: 150px;
+    height: 150px;
+}
+
+.carrito{
+    background-color: rgb(9, 42, 85);
+    color: rgb(255, 255, 255);
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 4px;
+}
+
+/* Precios. Se aplica a Botines, Canilleras y medias */
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Parrafo que acompaña al logo de Instagram */
+.redes p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin: 20px;
+}
+
+/* Logo de Instagram */
+#instagram {
+    width: 80px;
+    height: 80px;
+}
+
+/* Registro/Iniciar Sesion */
+.container{
+    padding: 20px;
+    margin: 10px;
+}
+/* Footer */
+.pieDePagina {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    text-align: center;
+}
+
+.pieDePagina p {
+    font-size: 18px;
+    text-align: center;
+}
+
+#pieDePagina__logo {
+    height: 60px;
+    width: 60px;
+}
+.copyright{
+    padding: 10px;
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template:
+            "header  header header" 100px
+            "navbar  main   sidebar" auto
+            "footer  footer footer" 100px /
+            200px auto 200px;
+    }   
+
+    /* Barra de navegacion */
+    .navbar {
+        padding: 12px;
+        background-color: #edf0f5;
+        font-size: 20px;
+    }
+
+    .navbar-collapse {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* h2 del main */
+    .hero-principal h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .logo-main {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    /* Informacion en el index sobre Pepes */
+    .index__main__informacion {
+        font-size: 50px;
+    }
+
+    /* BOTINES */
+    /* Marca botin */
+    .productos__contenedor__marca {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    /* Modelo botin */
+
+    .productos__contenedor__modelos__botin {
+        font-size: 30px;
+        margin: 5px;
+        padding: 1px;
+    }
+
+    .productos__contenedor__modelos__botin img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Añadir al carrito */
+    .carrito {
+        font-size: 15px;
+        margin: 10px;
+        width: 200px;
+        text-align: center;
+    }
+
+    /* MEDIAS */
+
+    /* Titulo */
+    .productos__contenedor__accesorio {
+        font-size: 50px;
+    }
+
+    .productos__contenedor__modelos__medias {
+        margin: 2px;
+    }
+
+    .productos__contenedor__modelos__medias img {
+        width: 300px;
+        height: 300px;
+        border: 3px rgb(202, 195, 195);
+        text-align: center;
+    }
+
+    /* Titulo modelo media */
+    .productos__contenedor__modelos__medias p {
+        font-size: 25px;
+    }
+
+    /* Canilleras */
+    .productos__contenedor__modelos__canilleras {
+        margin: 2px;
+    }
+
+    .productos__contenedor__modelos__canilleras img {
+        border: 3px rgb(202, 195, 195);
+        width: 350px;
+        height: 350px;
+    }
+
+    .productos__contenedor__modelos__canilleras p {
+        font-size: 45px;
+    }
+
+    /* Precios. Se aplica a Botines, Canilleras y medias */
+    .precio {
+        font-size: 30px;
+    }
+
+    .redes {
+        margin: 50px;
+    }
+
+    /* Parrafo que acompaña al logo de Instagram */
+    .redes p {
+        font-size: 60px;
+    }
+
+    /* Logo de Instagram */
+    #instagram {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Formulario para Iniciar sesion/Registrarse */
+    .form {
+        font-size: 40px;
+        padding: 30px;
+    }
+
+    .form div {
+        font-size: 40px;
+        padding: 20px;
+    }
+    
+    .pieDePagina p {
+        font-size: 23px;
+    }
+
+    #pieDePagina__logo {
+        height: 70px;
+        width: 70px;
+    }
+}
