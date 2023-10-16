@@ -1,32 +1,25 @@
 /* BOTINES */
 .productos__contenedor {
-    display: flex;
+    @extend %flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     /* Marca botines */
     .productos__contenedor__marca {
     font-size: 15px;
     margin: 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend %flex-center;
+
     flex-wrap: wrap;
     }
     /* Contenedor modelos botines */
     .productos__contenedor__modelos {
-        display: flex;
+        @extend %flex-center;
         flex-direction: column;
-        justify-content: center;
-        justify-content: center;
         flex-flow: wrap;
         font-size: 18px;
         margin: 10px;
         .productos__contenedor__modelos__botin {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %flex-center;
             flex-direction: column;
             text-align: center;
             font-size: 18px;
@@ -78,8 +71,8 @@
 }
 .card:hover{
     cursor: pointer;
-    transition: 1s;
-    transform: scale(1.1);
+    transition: 1.5s;
+    transform: scale(1.2);
 }
 .marca{
     text-align: center;

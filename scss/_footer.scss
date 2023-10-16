@@ -1,11 +1,8 @@
 /* Footer */
 .pieDePagina {
     background-color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
+    @extend %flex-center;
     flex-direction: column;
-    align-items: center;
-    margin: 15px;
     text-align: center;
     
     /* Parrafo del footer */
@@ -16,9 +13,34 @@
     .copyright{
         padding: 10px;
     }
+    .pieDePagina__pago {
+        img{
+        width: 300px;
+        height: 150px;
+    }
+}
+    
     /* Logo del footer */
     #pieDePagina__logo {
     height: 60px;
     width: 60px;
-}
+    }
+
+    .pieDePagina__publicidad{
+    background-color: rgb(4, 20, 109);
+    color: white;
+    }
+    .pieDePagina__publicidad__boton{
+
+        border: solid 1px black;
+        border-radius: 50px;
+        text-align: left;
+        a {
+            text-decoration: none;
+            color:rgb(4, 20, 109);
+            padding: 10px;
+
+        }
+    }
+
 }

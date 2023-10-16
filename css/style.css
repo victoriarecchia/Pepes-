@@ -1,14 +1,345 @@
 @charset "UTF-8";
+/* BOTINES */
+.productos__contenedor {
+  flex-direction: column;
+  /* Marca botines */
+  /* Contenedor modelos botines */
+}
+.productos__contenedor .productos__contenedor__marca {
+  font-size: 15px;
+  margin: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.productos__contenedor .productos__contenedor__modelos {
+  flex-direction: column;
+  flex-flow: wrap;
+  font-size: 18px;
+  margin: 10px;
+}
+.productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin {
+  flex-direction: column;
+  text-align: center;
+  font-size: 18px;
+  border: solid 1px rgb(172, 167, 167);
+  border-radius: 10px;
+  padding: 2px;
+  margin: 1px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  /* Imagenes de los botines*/
+}
+.productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin img {
+  width: 150px;
+  height: 150px;
+  flex-wrap: wrap;
+}
+.productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin .precio {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Boton añadir al carrito */
+.carrito {
+  background-color: rgb(9, 42, 85);
+  color: rgb(255, 255, 255);
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 4px;
+}
+
+.card-container {
+  /* Extiendo las caracteristicas de display, justify content y align items*/
+  margin: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.card-container .card {
+  width: 18rem;
+}
+.card-container .card .card-body {
+  text-align: center;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: 1.5s;
+  transform: scale(1.2);
+}
+
+.marca {
+  text-align: center;
+  font-size: 60px;
+  padding: 5px;
+}
+
+/* Barra de navegación */
+.navbar {
+  padding: 10px;
+  background-color: #edf0f5;
+  justify-content: space-between;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#search-form {
+  display: none;
+}
+
+#navbar:hover #search-form {
+  display: block;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.navbar-logo {
+  grid-column: 1;
+}
+
+.navbar-menu {
+  grid-column: 2;
+  text-align: center; /* Alinea el menú en el medio horizontalmente */
+}
+
+.img-navbar {
+  display: grid;
+  grid-column: 3;
+  align-items: center;
+  /* Alinea las imágenes a la derecha */
+}
+
+.navbar-nav li {
+  padding: 6px;
+  font-size: 25px;
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: rgb(47, 145, 88);
+}
+
+.nav-link:active {
+  color: rgb(59, 59, 155);
+}
+
+/* Boton de busqueda */
+#boton {
+  text-decoration: none;
+  color: green;
+}
+
+/* Logo de la navbar*/
+#logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#logo-inicio {
+  display: flex;
+  justify-content: flex-end;
+  height: 40px;
+  width: 40px;
+}
+
+* {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* MEDIAS */
+.productos__contenedor__accesorio {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.productos__contenedor__accesorio .productos__contenedor__modelos__medias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 2px;
+  margin: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  /* Imagenes de las medias */
+  /* Titulo modelo media */
+  /*Precio de las medias*/
+}
+.productos__contenedor__accesorio .productos__contenedor__modelos__medias img {
+  width: 150px;
+  height: 150px;
+}
+.productos__contenedor__accesorio .productos__contenedor__modelos__medias p {
+  font-size: 15px;
+}
+.productos__contenedor__accesorio .productos__contenedor__modelos__medias .precio {
+  font-size: 20px;
+  font-weight: bold;
+}
+.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  border: solid 1px rgb(0, 0, 0);
+  border-radius: 8px;
+  padding: 2px;
+  margin: 2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  /* Imagenes canilleras */
+}
+.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras img {
+  width: 150px;
+  height: 150px;
+}
+.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras .precio {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.talles {
+  margin: 10px;
+  flex-direction: column;
+}
+.talles h2 {
+  width: 100%;
+  color: rgb(0, 0, 0);
+}
+.talles .talles__niño {
+  flex-direction: column;
+}
+.talles .talles__niño img {
+  width: 280px;
+  height: 250px;
+}
+.talles .talles__adulto {
+  flex-direction: column;
+}
+.talles .talles__adulto img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Footer */
+.pieDePagina {
+  background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  text-align: center;
+  /* Parrafo del footer */
+  /* Logo del footer */
+}
+.pieDePagina p {
+  font-size: 18px;
+  text-align: center;
+}
+.pieDePagina .copyright {
+  padding: 10px;
+}
+.pieDePagina .pieDePagina__pago img {
+  width: 300px;
+  height: 150px;
+}
+.pieDePagina #pieDePagina__logo {
+  height: 60px;
+  width: 60px;
+}
+.pieDePagina .pieDePagina__publicidad {
+  background-color: rgb(4, 20, 109);
+  color: white;
+}
+.pieDePagina .pieDePagina__publicidad__boton {
+  border: solid 1px black;
+  border-radius: 50px;
+  text-align: left;
+}
+.pieDePagina .pieDePagina__publicidad__boton a {
+  text-decoration: none;
+  color: rgb(4, 20, 109);
+  padding: 10px;
+}
+
+/* MAIN */
+.index__main {
+  background-color: rgb(255, 255, 255);
+  /* Logo del main */
+}
+.index__main .hero-principal {
+  flex-direction: column;
+}
+.index__main .hero-principal #logoPepes {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.ingresos {
+  font-size: 35px;
+  text-align: center;
+  background-color: rgb(10, 20, 112);
+  color: white;
+  margin: 0;
+}
+
+#img-carousel {
+  height: 400px;
+}
+
+.redes {
+  flex-direction: column;
+  /* Parrafo que acompaña al logo de Instagram */
+}
+.redes p {
+  font-size: 20px;
+  margin: 20px;
+}
+
+/* Logo de Instagram */
+#instagram {
+  width: 80px;
+  height: 80px;
+}
+
+.productos__contenedor, .productos__contenedor .productos__contenedor__marca, .productos__contenedor .productos__contenedor__modelos, .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin, .card-container, .talles, .talles .talles__niño, .talles .talles__adulto, .pieDePagina, .index__main .hero-principal, .redes, .redes p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 1024px) {
   /* Barra de navegacion */
   .navbar {
-    padding: 12px;
-    background-color: #edf0f5;
     font-size: 20px;
-  }
-  .navbar-collapse {
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
   }
   .logo-main {
     width: 400px;
@@ -16,9 +347,14 @@
     border-radius: 50%;
     padding: 10px;
   }
-  /* Informacion en el index sobre Pepes */
-  .index__main__informacion {
-    font-size: 50px;
+  .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #img-carousel {
+    max-width: 50%;
+    height: auto;
   }
   /* BOTINES */
   /* Marca botin */
@@ -97,268 +433,6 @@
     height: 70px;
     width: 70px;
   }
-}
-/* BOTINES */
-.productos__contenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* Marca botines */
-  /* Contenedor modelos botines */
-}
-.productos__contenedor .productos__contenedor__marca {
-  font-size: 15px;
-  margin: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.productos__contenedor .productos__contenedor__modelos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-content: center;
-  flex-flow: wrap;
-  font-size: 18px;
-  margin: 10px;
-}
-.productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  font-size: 18px;
-  border: solid 1px rgb(172, 167, 167);
-  border-radius: 10px;
-  padding: 2px;
-  margin: 1px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  /* Imagenes de los botines*/
-}
-.productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin img {
-  width: 150px;
-  height: 150px;
-  flex-wrap: wrap;
-}
-.productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin .precio {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* Boton añadir al carrito */
-.carrito {
-  background-color: rgb(9, 42, 85);
-  color: rgb(255, 255, 255);
-  border: solid 1px black;
-  border-radius: 10px;
-  padding: 7px;
-  margin: 4px;
-}
-
-.card-container {
-  /* Extiendo las caracteristicas de display, justify content y align items*/
-  margin: 10px;
-  padding: 20px;
-  flex-wrap: wrap;
-}
-.card-container .card {
-  width: 18rem;
-}
-.card-container .card .card-body {
-  text-align: center;
-}
-
-.card:hover {
-  cursor: pointer;
-  transition: 1s;
-  transform: scale(1.1);
-}
-
-.marca {
-  text-align: center;
-  font-size: 60px;
-  padding: 5px;
-}
-
-/* Barra de navegación */
-.navbar {
-  padding: 10px;
-  background-color: #edf0f5;
-}
-
-.navbar-collapse {
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-link {
-  color: black;
-}
-
-.nav-link:hover {
-  color: rgb(47, 145, 88);
-}
-
-.nav-link:active {
-  color: rgb(59, 59, 155);
-}
-
-/* Boton de busqueda */
-#boton {
-  text-decoration: none;
-  color: green;
-}
-
-/* Logo de la navbar*/
-#logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-* {
-  margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* MEDIAS */
-.productos__contenedor__accesorio {
-  font-size: 20px;
-  margin-top: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__medias {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  border: solid 1px rgb(0, 0, 0);
-  border-radius: 8px;
-  padding: 2px;
-  margin: 2px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  /* Imagenes de las medias */
-  /* Titulo modelo media */
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__medias img {
-  width: 150px;
-  height: 150px;
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__medias p {
-  font-size: 15px;
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__medias .precio {
-  font-size: 20px;
-  font-weight: bold;
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  border: solid 1px rgb(0, 0, 0);
-  border-radius: 8px;
-  padding: 2px;
-  margin: 2px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  /* Imagenes canilleras */
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras img {
-  width: 150px;
-  height: 150px;
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras .precio {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* Footer */
-.pieDePagina {
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 15px;
-  text-align: center;
-  /* Parrafo del footer */
-  /* Logo del footer */
-}
-.pieDePagina p {
-  font-size: 18px;
-  text-align: center;
-}
-.pieDePagina .copyright {
-  padding: 10px;
-}
-.pieDePagina #pieDePagina__logo {
-  height: 60px;
-  width: 60px;
-}
-
-/* MAIN */
-.index__main {
-  background-color: rgb(255, 255, 255);
-}
-
-/* Logo del main */
-.hero-principal {
-  flex-direction: column;
-}
-
-#logoPepes {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  padding: 10px;
-}
-
-/* Informacion en el index sobre Pepes */
-.index__main__informacion {
-  font-size: 25px;
-  color: rgb(46, 80, 118);
-  text-align: center;
-  margin: 10px;
-}
-
-.redes {
-  flex-direction: column;
-  /* Parrafo que acompaña al logo de Instagram */
-}
-.redes p {
-  font-size: 20px;
-  margin: 20px;
-}
-
-/* Logo de Instagram */
-#instagram {
-  width: 80px;
-  height: 80px;
-}
-
-.card-container, .hero-principal, .redes, .redes p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

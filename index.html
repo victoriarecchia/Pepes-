@@ -2,18 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pepes</title>
-    <link rel="shortcut icon" href="img/logoPepes.png" type="image/jpeg" />
+    <!-- Metaetiquetas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Los ultimos modelos de botines se futbol se encuentran en Pepes Botines. Envios a todo el pais. Todos los medios de pago">
+    <meta name="keywords" content="Futbol">
+    <!-- Titulo -->
+    <title>Pepes Botines</title>
+    <!-- Aos Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Animate Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/PEPES PEPES.jpeg" type="image/jpeg">
 </head>
 
 <body>
@@ -22,13 +33,12 @@
         <!-- Barra de navegacion -->
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="img/logoPepes.png" id="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-toggler">
-                <!-- Menu -->
+                    <!-- Menu hamburguesa-->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
@@ -40,43 +50,80 @@
                             <a class="nav-link" href="pages/accesorios.html">Accesorios</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="pages/equivalencia-talles.html">Tabla de talles</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar modelo.."
-                            aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"><a href="index.html" id="boton">Buscar</a></button>
-                    </form>
-                    <!-- Iniciar Sesion/Registrarse -->
-                    <ul class="navbar-nav" >
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/formulario.html">Iniciar Sesion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">Registrarse</a>
-                        </li>
-                    </ul>
                 </div>
+                
+                <a class="navbar" href="index.html"><img src="img/logoPepes.png" id="logo"></a>
+                <a class="navbar" href="pages/busqueda.html"><img src="img/icons8-search-60.png" alt="..."
+                        id="logo-inicio"></a>
+                <a class="navbar" href="pages/formulario.html"><img src="img/icons8-customer-64.png"
+                        id="logo-inicio"></a>
             </div>
         </nav>
     </header>
 
+
+
     <!-- Contenido principal de la página de inicio -->
     <main class="index__main">
+        <!-- Formulario para realizar busqueda de algún modelo de botin -->
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar modelo.." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><a href="index.html" id="boton">Buscar</a></button>
+        </form>
         <section class="hero align-items-stretch">
-        <div class="hero-principal">
-            <img src="img/logoPepes.png" id="logoPepes">
-            <h2 class="index__main__informacion">Todo lo que necesitas para tu rendimiento
-            deportivo.</h2>
+            <div class="hero-principal">
+                <img src="img/logoPepes.png" id="logoPepes" data-aos="fade-right" data-aos-duration="2000">
             </div>
         </section>
+
+        <p class="ingresos" data-aos="fade-right" data-aos-duration="2000">¡Nuevos ingresos!</p>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/phantom.jpg " class="d-block w-100" alt="..." id="img-carousel">
+        
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ultra.jpg" class="d-block w-100" alt="..." id="img-carousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/fg.jpg" class="d-block w-100" alt="..." id="img-carousel">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
     </main>
+
 
     <!-- Footer -->
     <footer class="pieDePagina">
-        <p class="copyright">Copyright | 2023 </p>
-        <a href="index.html"><img src="img/logoPepes.png" id="pieDePagina__logo" /></a>
+        <div>
+            <p>Pepes botines: todo lo que necesitas para tu rendimiento
+            deportivo.</p>
+            <p class="copyright">Copyright | 2023 </p>
+            <a href="index.html"><img src="img/logoPepes.png" id="pieDePagina__logo" /></a>
+        </div>
+
+
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
