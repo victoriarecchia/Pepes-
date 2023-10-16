@@ -1,0 +1,88 @@
+/* BOTINES */
+.productos__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Marca botines */
+    .productos__contenedor__marca {
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    /* Contenedor modelos botines */
+    .productos__contenedor__modelos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: center;
+        flex-flow: wrap;
+        font-size: 18px;
+        margin: 10px;
+        .productos__contenedor__modelos__botin {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            font-size: 18px;
+            border: solid 1px rgb(172, 167, 167);
+            border-radius: 10px;
+            padding: 2px;
+            margin: 1px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+
+            /* Imagenes de los botines*/
+            img {
+                width: 150px;
+                height: 150px;
+                flex-wrap: wrap;
+
+            }
+            .precio {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+}
+
+/* Boton añadir al carrito */
+.carrito{
+    background-color: rgb(9, 42, 85);
+    color: rgb(255, 255, 255);
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 4px;
+}
+
+.card-container{
+    /* Extiendo las caracteristicas de display, justify content y align items*/
+    @extend %flex-center;
+    margin: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+    .card{
+        width: 18rem;
+        .card-body{
+            text-align: center;
+        }
+    }
+}
+.card:hover{
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
+.marca{
+    text-align: center;
+    font-size: 60px ;
+    padding: 5px;
+}

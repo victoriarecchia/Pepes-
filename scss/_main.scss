@@ -1,0 +1,25 @@
+/* MAIN */
+.index__main {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Logo del main */
+.hero-principal{
+    @extend %flex-center;
+    flex-direction: column;
+}
+
+#logoPepes {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Informacion en el index sobre Pepes */
+.index__main__informacion {
+    font-size: 25px;
+    color: rgb(46, 80, 118);
+    text-align: center;
+    margin: 10px;
+}

@@ -1,0 +1,40 @@
+/* Barra de navegación */
+.navbar {
+    padding: 10px;
+    background-color: #edf0f5;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    color: black;
+}
+.nav-link:hover{
+    color: rgb(47, 145, 88);
+}
+
+.nav-link:active{
+    color: rgb(59, 59, 155);
+}
+/* Boton de busqueda */
+#boton{
+    text-decoration: none;
+    color: green;
+}
+
+/* Logo de la navbar*/
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
