@@ -27,7 +27,6 @@
     }
 
 
-
     /* BOTINES */
     /* Marca botin */
     .productos__contenedor__marca {
@@ -113,11 +112,14 @@
         }
     }
 
+
     /* Footer */
-    .pieDePagina p {
+
+    .pieDePagina {
+    p {
         font-size: 23px;
     }
-
+}
     #pieDePagina__logo {
         height: 70px;
         width: 70px;
