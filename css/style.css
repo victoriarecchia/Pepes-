@@ -28,11 +28,6 @@
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   /* Imagenes de los botines*/
 }
-.productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin img {
-  width: 150px;
-  height: 150px;
-  flex-wrap: wrap;
-}
 .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin .precio {
   font-size: 20px;
   font-weight: bold;
@@ -59,6 +54,10 @@
 }
 .card-container .card .card-body {
   text-align: center;
+}
+.card-container .card img {
+  width: auto;
+  height: 330px;
 }
 
 .card:hover {
@@ -236,15 +235,15 @@
   flex-direction: column;
 }
 .talles .talles__niño img {
-  width: 280px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
 }
 .talles .talles__adulto {
   flex-direction: column;
 }
 .talles .talles__adulto img {
   width: 300px;
-  height: 300px;
+  height: 350px;
 }
 
 /* Footer */
@@ -287,11 +286,11 @@
 
 /* MAIN */
 .index__main {
-  background-color: rgb(255, 255, 255);
   /* Logo del main */
 }
 .index__main .hero-principal {
   flex-direction: column;
+  background-color: rgb(22, 31, 63);
 }
 .index__main .hero-principal #logoPepes {
   width: 180px;
@@ -301,15 +300,56 @@
 }
 
 .ingresos {
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
-  background-color: rgb(10, 20, 112);
-  color: white;
+  background-color: rgb(2, 8, 24);
+  color: rgb(255, 255, 255);
   margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #img-carousel {
   height: 400px;
+}
+
+.carousel-inner {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(237, 240, 245);
+}
+
+/*Botines Adidas Copa Edicion Limitada*/
+.titulo-copa {
+  font-family: Helvetica-Neue;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.nombre-copa {
+  font-family: Helvetica-Neue;
+  font-size: 20px;
+  text-align: center;
+}
+
+.botines__copa {
+  flex-direction: column;
+}
+.botines__copa #botines__copa__img {
+  width: 400px;
+  height: 400px;
+}
+
+/*Boton comprar Adidas Copa*/
+.boton .boton-comprar {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px;
+}
+.boton .boton-comprar a {
+  text-decoration: none;
+  color: white;
 }
 
 .redes {
@@ -327,12 +367,18 @@
   height: 80px;
 }
 
-.productos__contenedor, .productos__contenedor .productos__contenedor__marca, .productos__contenedor .productos__contenedor__modelos, .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin, .card-container, .talles, .talles .talles__niño, .talles .talles__adulto, .pieDePagina, .index__main .hero-principal, .redes, .redes p {
+.productos__contenedor, .productos__contenedor .productos__contenedor__marca, .productos__contenedor .productos__contenedor__modelos, .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin, .card-container, .talles, .talles .talles__niño, .talles .talles__adulto, .pieDePagina, .index__main .hero-principal, .botines__copa, .boton, .boton .boton-comprar a, .redes, .redes p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/*El carousel soló se verá para dispositivos moviles*/
+@media (min-width: 450px) {
+  #carouselExample {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   /* Barra de navegacion */
   .navbar {
@@ -341,20 +387,27 @@
     justify-content: space-around;
     align-items: center;
   }
+  .hero-principal {
+    background-color: rgb(22, 31, 63);
+  }
   .logo-main {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     padding: 10px;
   }
-  .carousel-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   #img-carousel {
     max-width: 50%;
     height: auto;
+  }
+  .carousel-inner {
+    background-color: rgb(237, 240, 245);
+  }
+  .carousel-item h2 {
+    font-size: 22px;
+  }
+  #carouselExample {
+    display: none;
   }
   /* BOTINES */
   /* Marca botin */
@@ -424,6 +477,25 @@
   .redes #instagram {
     width: 120px;
     height: 120px;
+  }
+  .botines__copa {
+    flex-direction: row;
+  }
+  .botines__copa #botines__copa__img {
+    width: 690px;
+    height: 600px;
+  }
+  .boton-comprar a {
+    font-size: 30px;
+  }
+  /*Equivalencias*/
+  #talles__niño__img {
+    width: 400px;
+    height: 300px;
+  }
+  #talles__adulto__img {
+    width: 400px;
+    height: 350px;
   }
   /* Footer */
   .pieDePagina p {

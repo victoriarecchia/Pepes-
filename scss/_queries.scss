@@ -1,3 +1,11 @@
+/*El carousel soló se verá para dispositivos moviles*/
+
+@media (min-width: 450px) {
+    #carouselExample {
+        display: none;
+    }
+}
+
 @media (min-width: 1024px) {
 
     /* Barra de navegacion */
@@ -7,7 +15,9 @@
         justify-content: space-around;
         align-items: center;
     }
-
+    .hero-principal{
+        background-color: rgb(22, 31, 63);
+    }
 
     .logo-main {
         width: 400px;
@@ -15,17 +25,27 @@
         border-radius: 50%;
         padding: 10px;
     }
-    .carousel-inner{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     #img-carousel {
         max-width: 50%;
         height: auto;
+    }
+
+    .carousel-inner {
+        background-color: rgb(237, 240, 245);
 
     }
 
+    .carousel-item {
+        h2{
+            font-size: 22px;
+        }
+
+    }
+
+    #carouselExample {
+        display: none;
+    }
 
     /* BOTINES */
     /* Marca botin */
@@ -86,7 +106,6 @@
             width: 350px;
             height: 350px;
         }
-
         p {
             font-size: 45px;
         }
@@ -111,15 +130,38 @@
             height: 120px;
         }
     }
+    .botines__copa{
+        flex-direction: row;
+        #botines__copa__img{
+            width: 690px;
+            height: 600px;
+        }
+    }
+    .boton-comprar{
+        a{
+            font-size: 30px;
+        }
 
+    }
+    /*Equivalencias*/
+    #talles__niño__img {
+        width: 400px;
+        height: 300px;
+    }
+
+    #talles__adulto__img {
+        width: 400px;
+        height: 350px;
+    }
 
     /* Footer */
 
     .pieDePagina {
-    p {
-        font-size: 23px;
+        p {
+            font-size: 23px;
+        }
     }
-}
+
     #pieDePagina__logo {
         height: 70px;
         width: 70px;

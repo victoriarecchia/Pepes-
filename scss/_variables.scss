@@ -1,8 +1,2 @@
-$tamanios:(
-    h1: 40px,
-    h2: 36px,
-    h3: 32 px,
-    h4: 28px,
-    h5: 24px,
-    h6: 20px
-);
+$carousel-transition-duration:       .2s;
+$carousel-transition:                transform $carousel-transition-duration ease-right; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
