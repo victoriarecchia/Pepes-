@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /* BOTINES */
+.marca {
+  text-align: center;
+  font-size: 45px;
+  padding: 5px;
+  font-family: Helvetica-Neue;
+}
+
 .productos__contenedor {
   flex-direction: column;
   /* Marca botines */
@@ -14,7 +21,7 @@
 .productos__contenedor .productos__contenedor__modelos {
   flex-direction: column;
   flex-flow: wrap;
-  font-size: 18px;
+  font-size: 20px;
   margin: 10px;
 }
 .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin {
@@ -45,8 +52,7 @@
 
 .card-container {
   /* Extiendo las caracteristicas de display, justify content y align items*/
-  margin: 10px;
-  padding: 20px;
+  margin: 5px;
   flex-wrap: wrap;
 }
 .card-container .card {
@@ -64,12 +70,6 @@
   cursor: pointer;
   transition: 1.5s;
   transform: scale(1.2);
-}
-
-.marca {
-  text-align: center;
-  font-size: 60px;
-  padding: 5px;
 }
 
 /* Barra de navegación */
@@ -228,6 +228,7 @@
   flex-direction: column;
 }
 .talles h2 {
+  font-family: Helvetica-Neue;
   width: 100%;
   color: rgb(0, 0, 0);
 }
@@ -239,6 +240,7 @@
   height: 200px;
 }
 .talles .talles__adulto {
+  font-family: Helvetica-Neue;
   flex-direction: column;
 }
 .talles .talles__adulto img {
@@ -297,15 +299,6 @@
   height: 180px;
   border-radius: 50%;
   padding: 10px;
-}
-
-.ingresos {
-  font-size: 30px;
-  text-align: center;
-  background-color: rgb(2, 8, 24);
-  color: rgb(255, 255, 255);
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #img-carousel {
@@ -396,20 +389,17 @@
     border-radius: 50%;
     padding: 10px;
   }
-  #img-carousel {
-    max-width: 50%;
-    height: auto;
-  }
   .carousel-inner {
     background-color: rgb(237, 240, 245);
   }
   .carousel-item h2 {
     font-size: 22px;
   }
+  /*El carousel de imagenes soló estará disponible para dispositivos moviles*/
   #carouselExample {
     display: none;
   }
-  /* BOTINES */
+  /* Botines */
   /* Marca botin */
   .productos__contenedor__marca {
     margin-top: 20px;
@@ -432,7 +422,7 @@
     width: 200px;
     text-align: center;
   }
-  /* MEDIAS */
+  /* Medias */
   .productos__contenedor__accesorio {
     font-size: 50px;
   }
@@ -490,12 +480,12 @@
   }
   /*Equivalencias*/
   #talles__niño__img {
-    width: 400px;
-    height: 300px;
+    width: 310px;
+    height: 200px;
   }
   #talles__adulto__img {
-    width: 400px;
-    height: 350px;
+    width: 300px;
+    height: 320px;
   }
   /* Footer */
   .pieDePagina p {

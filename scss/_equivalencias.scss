@@ -3,7 +3,7 @@
         @extend %flex-center;
         flex-direction: column;
         h2{
-
+            font-family: Helvetica-Neue;
             width: 100%;
             color: rgb(0, 0, 0);
         }
@@ -17,6 +17,7 @@
             }
         }
         .talles__adulto{
+            font-family: Helvetica-Neue;
             @extend %flex-center;
             flex-direction: column;
             img{

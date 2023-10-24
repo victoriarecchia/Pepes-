@@ -1,23 +1,33 @@
 /* BOTINES */
+.marca {
+    text-align: center;
+    font-size: 45px;
+    padding: 5px;
+    font-family: Helvetica-Neue;
+}
+
 .productos__contenedor {
     @extend %flex-center;
     flex-direction: column;
+
     /* Marca botines */
     .productos__contenedor__marca {
-    font-size: 15px;
-    margin: 10px;
-    text-align: center;
-    @extend %flex-center;
+        font-size: 15px;
+        margin: 10px;
+        text-align: center;
+        @extend %flex-center;
 
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     }
+
     /* Contenedor modelos botines */
     .productos__contenedor__modelos {
         @extend %flex-center;
         flex-direction: column;
         flex-flow: wrap;
-        font-size: 18px;
+        font-size: 20px;
         margin: 10px;
+
         .productos__contenedor__modelos__botin {
             @extend %flex-center;
             flex-direction: column;
@@ -41,7 +51,7 @@
 }
 
 /* Boton añadir al carrito */
-.carrito{
+.carrito {
     background-color: rgb(9, 42, 85);
     color: rgb(255, 255, 255);
     border: solid 1px black;
@@ -50,31 +60,28 @@
     margin: 4px;
 }
 
-.card-container{
+.card-container {
     /* Extiendo las caracteristicas de display, justify content y align items*/
     @extend %flex-center;
-    margin: 10px;
-    padding: 20px;
+    margin: 5px;
     flex-wrap: wrap;
-    
-    .card{
+
+    .card {
         width: 18rem;
-        .card-body{
+
+        .card-body {
             text-align: center;
         }
-        img{
+
+        img {
             width: auto;
             height: 330px;
         }
     }
 }
-.card:hover{
+
+.card:hover {
     cursor: pointer;
     transition: 1.5s;
     transform: scale(1.2);
-}
-.marca{
-    text-align: center;
-    font-size: 60px ;
-    padding: 5px;
 }
