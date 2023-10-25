@@ -302,6 +302,31 @@
   padding: 10px;
 }
 
+.redes h1 {
+  padding: 10px;
+}
+
+.mb-3 {
+  margin: 10px;
+}
+
+/*h1 Iniciar Sesion y registrarse*/
+.titulo_registro {
+  font-size: 25px;
+  background-color: rgb(22, 31, 63);
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.parrafo_registro {
+  font-size: 12px;
+}
+
+.mb-3 {
+  margin: 10px;
+}
+
 /* MAIN */
 .index__main {
   /* Logo del main */
@@ -421,6 +446,9 @@
   /*El carousel de imagenes soló estará disponible para dispositivos moviles*/
   #carouselExample {
     display: none;
+  }
+  .titulo_registro {
+    font-size: 30px;
   }
   /* Botines */
   /* Marca botin */
