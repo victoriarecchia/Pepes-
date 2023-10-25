@@ -563,8 +563,14 @@
   margin-bottom: 20px;
 }
 
+/*h1 */
 .titulos {
   font-size: 45px;
+}
+
+/* h1 para Botines y Medias. Mismas caracteristicas*/
+.mb-3 {
+  margin: 30px;
 }
 
 body {

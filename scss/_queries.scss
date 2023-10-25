@@ -15,9 +15,11 @@
         justify-content: space-around;
         align-items: center;
     }
-    .hero-principal{
+
+    .hero-principal {
         background-color: rgb(22, 31, 63);
     }
+
     .logo-main {
         width: 400px;
         height: 400px;
@@ -29,19 +31,22 @@
         background-color: rgb(237, 240, 245);
 
     }
+
     .carousel-item {
-        h2{
+        h2 {
             font-size: 22px;
         }
     }
+
     /*El carousel de imagenes soló estará disponible para dispositivos moviles*/
     #carouselExample {
         display: none;
     }
 
-    .titulo_registro{
+    .titulo_registro {
         font-size: 30px;
     }
+
     /* Botines */
     /* Marca botin */
     .productos__contenedor__marca {
@@ -100,6 +105,7 @@
             width: 350px;
             height: 350px;
         }
+
         p {
             font-size: 45px;
         }
@@ -124,25 +130,29 @@
             height: 120px;
         }
     }
-    .botines__copa{
+
+    .botines__copa {
         flex-direction: row;
-        #botines__copa__img{
+
+        #botines__copa__img {
             width: 690px;
             height: 600px;
         }
     }
-    .boton-comprar{
-        a{
+
+    .boton-comprar {
+        a {
             font-size: 30px;
         }
 
     }
+
     /*Equivalencias*/
-    
+
     #talles__niño__img {
         width: 310px;
         height: 200px;
-        
+
     }
 
     #talles__adulto__img {
@@ -163,24 +173,34 @@
         width: 70px;
     }
 }
+
 .card-container {
     margin: 50px;
+
     .card {
         margin-right: 10px;
         margin-bottom: 20px;
     }
 }
-    .titulos{
-        font-size: 45px;
-    }
 
-    body{
-        position: relative;
-        padding-bottom: 13em;
-        min-height: 100vh;
-    }
-    .pieDePagina{
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
+/*h1 */
+.titulos {
+    font-size: 45px;
+}
+
+/* h1 para Botines y Medias. Mismas caracteristicas*/
+.mb-3 {
+    margin: 30px;
+}
+body {
+    position: relative;
+    padding-bottom: 13em;
+    min-height: 100vh;
+}
+
+.pieDePagina {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
