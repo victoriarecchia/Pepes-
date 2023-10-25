@@ -1,9 +1,20 @@
 @charset "UTF-8";
-/* BOTINES */
+/* h1 para Botines y Medias. Mismas caracteristicas  */
+.titulos {
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(22, 31, 63);
+  color: white;
+  padding: 10px;
+}
+
+.d-flex {
+  margin: 10px;
+}
+
 .marca {
   text-align: center;
   font-size: 45px;
-  padding: 5px;
   font-family: Helvetica-Neue;
 }
 
@@ -22,7 +33,6 @@
   flex-direction: column;
   flex-flow: wrap;
   font-size: 20px;
-  margin: 10px;
 }
 .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin {
   flex-direction: column;
@@ -52,14 +62,18 @@
 
 .card-container {
   /* Extiendo las caracteristicas de display, justify content y align items*/
-  margin: 5px;
   flex-wrap: wrap;
 }
 .card-container .card {
   width: 18rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 .card-container .card .card-body {
   text-align: center;
+}
+.card-container .card .card-title {
+  font-size: 16px;
 }
 .card-container .card img {
   width: auto;
@@ -69,7 +83,7 @@
 .card:hover {
   cursor: pointer;
   transition: 1.5s;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* Barra de navegación */
@@ -172,6 +186,7 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 100px;
 }
 .productos__contenedor__accesorio .productos__contenedor__modelos__medias {
   display: flex;
@@ -231,6 +246,7 @@
   font-family: Helvetica-Neue;
   width: 100%;
   color: rgb(0, 0, 0);
+  text-align: center;
 }
 .talles .talles__niño {
   flex-direction: column;
@@ -289,6 +305,13 @@
 /* MAIN */
 .index__main {
   /* Logo del main */
+}
+.index__main .titulo_index {
+  font-size: 40px;
+  background-color: rgb(22, 31, 63);
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
 }
 .index__main .hero-principal {
   flex-direction: column;
@@ -495,6 +518,29 @@
     height: 70px;
     width: 70px;
   }
+}
+.card-container {
+  margin: 50px;
+}
+.card-container .card {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.titulos {
+  font-size: 45px;
+}
+
+body {
+  position: relative;
+  padding-bottom: 13em;
+  min-height: 100vh;
+}
+
+.pieDePagina {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

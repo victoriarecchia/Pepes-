@@ -1,8 +1,17 @@
-/* BOTINES */
+/* h1 para Botines y Medias. Mismas caracteristicas  */
+.titulos{
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(22, 31, 63);
+    color: white;
+    padding: 10px;
+}
+.d-flex{
+    margin: 10px;
+}
 .marca {
     text-align: center;
     font-size: 45px;
-    padding: 5px;
     font-family: Helvetica-Neue;
 }
 
@@ -26,7 +35,6 @@
         flex-direction: column;
         flex-flow: wrap;
         font-size: 20px;
-        margin: 10px;
 
         .productos__contenedor__modelos__botin {
             @extend %flex-center;
@@ -63,14 +71,18 @@
 .card-container {
     /* Extiendo las caracteristicas de display, justify content y align items*/
     @extend %flex-center;
-    margin: 5px;
     flex-wrap: wrap;
 
     .card {
         width: 18rem;
-
+        margin-right: 5px;
+        margin-bottom: 5px;
+    
         .card-body {
             text-align: center;
+        }
+        .card-title{
+            font-size: 16px;
         }
 
         img {
@@ -83,5 +95,5 @@
 .card:hover {
     cursor: pointer;
     transition: 1.5s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }

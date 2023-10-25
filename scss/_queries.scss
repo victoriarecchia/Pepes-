@@ -160,3 +160,24 @@
         width: 70px;
     }
 }
+.card-container {
+    margin: 50px;
+    .card {
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+}
+    .titulos{
+        font-size: 45px;
+    }
+
+    body{
+        position: relative;
+        padding-bottom: 13em;
+        min-height: 100vh;
+    }
+    .pieDePagina{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
