@@ -303,11 +303,19 @@
 }
 
 .redes h1 {
-  padding: 10px;
+  padding: 20px;
 }
 
 .mb-3 {
   margin: 10px;
+}
+
+.mb-boton {
+  flex-direction: column;
+}
+
+.btn btn-secondary {
+  padding: 10px;
 }
 
 /*h1 Iniciar Sesion y registrarse*/
@@ -408,7 +416,7 @@
   height: 80px;
 }
 
-.productos__contenedor, .productos__contenedor .productos__contenedor__marca, .productos__contenedor .productos__contenedor__modelos, .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin, .card-container, .talles, .talles .talles__niño, .talles .talles__adulto, .pieDePagina, .index__main .hero-principal, .botines__copa, .boton, .boton .boton-comprar a, .redes, .redes p {
+.productos__contenedor, .productos__contenedor .productos__contenedor__marca, .productos__contenedor .productos__contenedor__modelos, .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin, .card-container, .talles, .talles .talles__niño, .talles .talles__adulto, .pieDePagina, .mb-boton, .index__main .hero-principal, .botines__copa, .boton, .boton .boton-comprar a, .redes, .redes p {
   display: flex;
   justify-content: center;
   align-items: center;
