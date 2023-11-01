@@ -1,71 +1,115 @@
 /* MAIN */
+body {
+    position: relative;
+    padding-bottom: 17em;
+    min-height: 200vh;
+}
+
 .index__main {
-    .titulo_index{
+    .titulo_index {
         font-size: 40px;
-        background-color: rgb(22, 31, 63);
-        color: white;
+        color: rgb(13, 25, 92);
         text-align: center;
-        padding-bottom: 10px
+        margin: 10px;
+        font-family: $fuente-botines
     }
-/* Logo del main */
-.hero-principal{
-    @extend %flex-center;
-    flex-direction: column;
-    background-color: rgb(22, 31, 63);
-    #logoPepes {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        padding: 10px;
+
+    /* Logo del main */
+    .hero-principal {
+        @extend %flex-center;
+        flex-direction: column;
+
+        #logoPepes {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            padding: 10px;
         }
     }
 }
 
-#img-carousel{
-    height: 400px;
 
-}
-.carousel-inner{
+.carousel-inner {
     text-align: center;
-    padding: 10px;
     background-color: rgb(237, 240, 245);
 }
 
-/*Botines Adidas Copa Edicion Limitada*/
-.titulo-copa{
-    font-family: Helvetica-Neue;
+
+
+.carousel-item {
+    background-color: $color-azul;
+
+    p {
+        padding-top: 10px;
+        font-size: 18px;
+        text-align: center;
+        color: white;
+    }
+}
+
+.titulo-phantom {
+    font-family: $fuente-botines;   
     margin: 10px;
     text-align: center;
     font-size: 30px;
 }
-.nombre-copa{
-    font-family: Helvetica-Neue;
+
+.info-phantom {
     font-size: 20px;
+    font-family: $fuente-botines;
+    padding-top: 5px;
+    margin: 10px;
     text-align: center;
 }
 
-.botines__copa{
+/*Botines Adidas Copa Edicion Limitada*/
+.botines-copa-main {
+    .titulo-copa {
+        font-family: Helvetica-Neue;
+        margin: 10px;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .nombre-copa {
+        font-family: Helvetica-Neue;
+        font-size: 25px;
+        text-align: center;
+
+    }
+
+    .info-copa {
+        font-size: 20px;
+        font-family: Helvetica-Neue;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.botines__copa {
     @extend %flex-center;
     flex-direction: column;
-    #botines__copa__img{
-        width: 400px;
-        height: 400px;
+
+    #botines__copa__img {
+        width: 320px;
     }
 }
 
 /*Boton comprar Adidas Copa*/
-.boton{
+.boton {
     @extend %flex-center;
-    .boton-comprar{
-        background-color: rgb(0, 0, 0);
+
+    .boton-comprar {
+        background-color: #212529;
         border-radius: 10px;
         font-size: 20px;
         margin: 10px;
-        a{
+
+        a {
             @extend %flex-center;
             text-decoration: none;
             color: white;
         }
     }
-    
+
 }

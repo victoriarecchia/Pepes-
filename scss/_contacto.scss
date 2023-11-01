@@ -1,17 +1,65 @@
 .redes{
     h1{
+        text-align: center;
         padding: 20px;
     }
 }
 .mb-3{
     margin: 10px;
-}
-.mb-boton{
     @extend %flex-center;
     flex-direction: column;
+}
+.form-label{
+    font-size: 22px;
+}
 
+
+#instagram{
+
+    margin: 10px;
+    border-radius: 25px;
 }
 
 .btn btn-secondary{
 padding: 10px;
 }
+
+
+.section__main__contacto{
+    .card__contacto{
+        @extend %flex-center;
+        padding: 10px;
+            .card__contacto__redes{
+            @extend %flex-center;
+            text-align: center;
+            flex-direction: column;
+            width: 300px;
+            height: 300px;
+            background-color: rgb(230, 228, 236);
+            margin: 5px;
+            border-radius: 10px;
+            color: black;
+            font-size: 20px;
+        }
+        
+            .card__contacto__ubicacion{
+            font-size: 20px;
+            @extend %flex-center;
+            flex-direction: column;
+            width: 300px;
+            height: 400px;
+            padding: 10px;
+            background-color:gainsboro;
+            margin: 5px;
+            border-radius: 10px;
+            color: black;
+            
+        iframe{
+            width: 280px;
+            height: 300px;
+            border-radius: 5px;
+        }
+    }
+    }
+}
+

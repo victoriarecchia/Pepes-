@@ -1,61 +1,34 @@
 /* MEDIAS */
-.productos__contenedor__accesorio {
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 100px;
-    .productos__contenedor__modelos__medias {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+.main__accesorios {
+    .info-medias {
+        font-size: 30px;
+        margin: 20px;
         text-align: center;
-        font-size: 18px;
-        border: solid 1px rgb(0, 0, 0);
-        border-radius: 8px;
-        padding: 2px;
-        margin: 2px;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-        /* Imagenes de las medias */
-        img {
-            width: 150px;
-            height: 150px;
-        }
-        /* Titulo modelo media */
-        p {
-            font-size: 15px;
-        }
-        /*Precio de las medias*/
-        .precio {
-            font-size: 20px;
-            font-weight: bold;
-        }
+        font-family: $fuente-botines;
     }
-    .productos__contenedor__modelos__canilleras {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 18px;
-        border: solid 1px rgb(0, 0, 0);
-        border-radius: 8px;
-        padding: 2px;
-        margin: 2px;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-        /* Imagenes canilleras */
-        img {
-            width: 150px;
-            height: 150px;
-        }
-        .precio {
-            font-size: 20px;
-            font-weight: bold;
-        }
+
+    /* Imagenes de las medias */
+    img {
+        width: 100%;
     }
-    
+
+    /* Titulo modelo media */
+    p {
+        font-size: 15px;
+    }
+
+
+    .card-title-medias {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    /*Precio de las medias*/
+    .precio {
+        font-size: 22px;
+    }
+
+
+
+
 }

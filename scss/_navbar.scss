@@ -2,8 +2,9 @@
 
 .navbar {
     padding: 10px;
-    background-color: #edf0f5;
+    background-color: #eceaea;
     justify-content: space-between;
+    font-size: 10px;
 
 }
 .navbar-collapse {
@@ -21,9 +22,7 @@
 }
 
 .navbar-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
 }
 
 #navbar-container {

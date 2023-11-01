@@ -1,8 +1,14 @@
 @charset "UTF-8";
+.redes p, .redes, .boton .boton-comprar a, .boton, .botines__copa, .index__main .hero-principal, .container1, .section__main__contacto .card__contacto .card__contacto__ubicacion, .section__main__contacto .card__contacto .card__contacto__redes, .section__main__contacto .card__contacto, .mb-3, .card__medida__pasos, .card__medida, .talles .talles__adulto, .talles .talles__niño, .talles, .navbar-nav, .card-container, .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin, .productos__contenedor .productos__contenedor__modelos, .productos__contenedor .productos__contenedor__marca, .productos__contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* h1 para Botines y Medias. Mismas caracteristicas  */
 .titulos {
   text-align: center;
-  font-size: 40px;
+  font-size: 35px;
   background-color: rgb(22, 31, 63);
   color: white;
   padding: 10px;
@@ -47,14 +53,12 @@
 }
 .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin .precio {
   font-size: 20px;
-  font-weight: bold;
 }
 
 /* Boton añadir al carrito */
 .carrito {
-  background-color: rgb(9, 42, 85);
   color: rgb(255, 255, 255);
-  border: solid 1px black;
+  border: solid 1px rgb(0, 0, 0);
   border-radius: 10px;
   padding: 7px;
   margin: 4px;
@@ -65,15 +69,15 @@
   flex-wrap: wrap;
 }
 .card-container .card {
-  width: 18rem;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  width: 19rem;
+  margin: 5px;
 }
 .card-container .card .card-body {
   text-align: center;
 }
 .card-container .card .card-title {
   font-size: 16px;
+  font-weight: 800;
 }
 .card-container .card img {
   width: auto;
@@ -89,8 +93,9 @@
 /* Barra de navegación */
 .navbar {
   padding: 10px;
-  background-color: #edf0f5;
+  background-color: #eceaea;
   justify-content: space-between;
+  font-size: 10px;
 }
 
 .navbar-collapse {
@@ -105,12 +110,6 @@
 
 #navbar:hover #search-form {
   display: block;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #navbar-container {
@@ -178,64 +177,37 @@
 }
 
 /* MEDIAS */
-.productos__contenedor__accesorio {
-  font-size: 20px;
-  margin-top: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 100px;
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__medias {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 18px;
-  border: solid 1px rgb(0, 0, 0);
-  border-radius: 8px;
-  padding: 2px;
-  margin: 2px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+.main__accesorios {
   /* Imagenes de las medias */
   /* Titulo modelo media */
   /*Precio de las medias*/
 }
-.productos__contenedor__accesorio .productos__contenedor__modelos__medias img {
-  width: 150px;
-  height: 150px;
+.main__accesorios .info-medias {
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+  font-family: Helvetica-Neue;
 }
-.productos__contenedor__accesorio .productos__contenedor__modelos__medias p {
+.main__accesorios img {
+  width: 100%;
+}
+.main__accesorios p {
   font-size: 15px;
 }
-.productos__contenedor__accesorio .productos__contenedor__modelos__medias .precio {
-  font-size: 20px;
-  font-weight: bold;
+.main__accesorios .card-title-medias {
+  font-size: 25px;
+  font-weight: 800;
 }
-.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.main__accesorios .precio {
+  font-size: 22px;
+}
+
+.titulo-equivalencias {
   text-align: center;
-  font-size: 18px;
-  border: solid 1px rgb(0, 0, 0);
-  border-radius: 8px;
-  padding: 2px;
-  margin: 2px;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-  /* Imagenes canilleras */
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras img {
-  width: 150px;
-  height: 150px;
-}
-.productos__contenedor__accesorio .productos__contenedor__modelos__canilleras .precio {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 25px;
+  background-color: rgb(22, 31, 63);
+  color: white;
+  padding: 10px;
 }
 
 .talles {
@@ -243,34 +215,69 @@
   flex-direction: column;
 }
 .talles h2 {
-  font-family: Helvetica-Neue;
-  width: 100%;
   color: rgb(0, 0, 0);
   text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size: 30px;
 }
 .talles .talles__niño {
   flex-direction: column;
 }
 .talles .talles__niño img {
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
 }
 .talles .talles__adulto {
-  font-family: Helvetica-Neue;
   flex-direction: column;
 }
 .talles .talles__adulto img {
-  width: 300px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
 }
 
-/* Footer */
-.pieDePagina {
-  background-color: rgb(255, 255, 255);
-  flex-direction: column;
+/* Equivalencia de talles*/
+/*Explicacion para calcular tu talle */
+.card__medida {
   text-align: center;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+.card__medida .card__medida__titulo {
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.card__medida__pasos {
+  background-color: rgb(236, 239, 241);
+  padding: 10px;
+  flex-direction: column;
+  font-size: 20px;
+}
+.card__medida__pasos p {
+  padding: 10px;
+}
+.card__medida__pasos img {
+  width: 310px;
+  height: 310px;
+}
+
+.pieDePagina {
+  background-color: rgb(11, 14, 48);
+  color: white;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   /* Parrafo del footer */
-  /* Logo del footer */
 }
 .pieDePagina p {
   font-size: 18px;
@@ -279,43 +286,66 @@
 .pieDePagina .copyright {
   padding: 10px;
 }
-.pieDePagina .pieDePagina__pago img {
-  width: 300px;
-  height: 150px;
-}
-.pieDePagina #pieDePagina__logo {
-  height: 60px;
-  width: 60px;
-}
-.pieDePagina .pieDePagina__publicidad {
-  background-color: rgb(4, 20, 109);
-  color: white;
-}
-.pieDePagina .pieDePagina__publicidad__boton {
-  border: solid 1px black;
-  border-radius: 50px;
-  text-align: left;
-}
-.pieDePagina .pieDePagina__publicidad__boton a {
-  text-decoration: none;
-  color: rgb(4, 20, 109);
-  padding: 10px;
+
+/* Logo del footer */
+#pieDePagina__logo {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
 }
 
 .redes h1 {
+  text-align: center;
   padding: 20px;
 }
 
 .mb-3 {
   margin: 10px;
+  flex-direction: column;
 }
 
-.mb-boton {
-  flex-direction: column;
+.form-label {
+  font-size: 22px;
+}
+
+#instagram {
+  margin: 10px;
+  border-radius: 25px;
 }
 
 .btn btn-secondary {
   padding: 10px;
+}
+
+.section__main__contacto .card__contacto {
+  padding: 10px;
+}
+.section__main__contacto .card__contacto .card__contacto__redes {
+  text-align: center;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(230, 228, 236);
+  margin: 5px;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+}
+.section__main__contacto .card__contacto .card__contacto__ubicacion {
+  font-size: 20px;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  background-color: gainsboro;
+  margin: 5px;
+  border-radius: 10px;
+  color: black;
+}
+.section__main__contacto .card__contacto .card__contacto__ubicacion iframe {
+  width: 280px;
+  height: 300px;
+  border-radius: 5px;
 }
 
 /*h1 Iniciar Sesion y registrarse*/
@@ -328,27 +358,40 @@
 }
 
 .parrafo_registro {
-  font-size: 12px;
+  font-size: 17px;
+  margin: 10px;
+  padding: 10px;
 }
 
-.mb-3 {
-  margin: 10px;
+.container1 {
+  text-align: center;
+}
+.container1 .form-label {
+  width: 18rem;
+}
+.container1 .form-check {
+  margin: 12px;
 }
 
 /* MAIN */
+body {
+  position: relative;
+  padding-bottom: 17em;
+  min-height: 200vh;
+}
+
 .index__main {
   /* Logo del main */
 }
 .index__main .titulo_index {
   font-size: 40px;
-  background-color: rgb(22, 31, 63);
-  color: white;
+  color: rgb(13, 25, 92);
   text-align: center;
-  padding-bottom: 10px;
+  margin: 10px;
+  font-family: Helvetica-Neue;
 }
 .index__main .hero-principal {
   flex-direction: column;
-  background-color: rgb(22, 31, 63);
 }
 .index__main .hero-principal #logoPepes {
   width: 180px;
@@ -357,27 +400,52 @@
   padding: 10px;
 }
 
-#img-carousel {
-  height: 400px;
-}
-
 .carousel-inner {
   text-align: center;
-  padding: 10px;
   background-color: rgb(237, 240, 245);
 }
 
-/*Botines Adidas Copa Edicion Limitada*/
-.titulo-copa {
+.carousel-item {
+  background-color: rgb(22, 31, 63);
+}
+.carousel-item p {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.titulo-phantom {
   font-family: Helvetica-Neue;
   margin: 10px;
   text-align: center;
   font-size: 30px;
 }
 
-.nombre-copa {
-  font-family: Helvetica-Neue;
+.info-phantom {
   font-size: 20px;
+  font-family: Helvetica-Neue;
+  padding-top: 5px;
+  margin: 10px;
+  text-align: center;
+}
+
+/*Botines Adidas Copa Edicion Limitada*/
+.botines-copa-main .titulo-copa {
+  font-family: Helvetica-Neue;
+  margin: 10px;
+  text-align: center;
+  font-size: 35px;
+}
+.botines-copa-main .nombre-copa {
+  font-family: Helvetica-Neue;
+  font-size: 25px;
+  text-align: center;
+}
+.botines-copa-main .info-copa {
+  font-size: 20px;
+  font-family: Helvetica-Neue;
+  padding: 10px;
   text-align: center;
 }
 
@@ -385,13 +453,12 @@
   flex-direction: column;
 }
 .botines__copa #botines__copa__img {
-  width: 400px;
-  height: 400px;
+  width: 320px;
 }
 
 /*Boton comprar Adidas Copa*/
 .boton .boton-comprar {
-  background-color: rgb(0, 0, 0);
+  background-color: #212529;
   border-radius: 10px;
   font-size: 20px;
   margin: 10px;
@@ -416,12 +483,6 @@
   height: 80px;
 }
 
-.productos__contenedor, .productos__contenedor .productos__contenedor__marca, .productos__contenedor .productos__contenedor__modelos, .productos__contenedor .productos__contenedor__modelos .productos__contenedor__modelos__botin, .card-container, .talles, .talles .talles__niño, .talles .talles__adulto, .pieDePagina, .mb-boton, .index__main .hero-principal, .botines__copa, .boton, .boton .boton-comprar a, .redes, .redes p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /*El carousel soló se verá para dispositivos moviles*/
 @media (min-width: 450px) {
   #carouselExample {
@@ -436,24 +497,48 @@
     justify-content: space-around;
     align-items: center;
   }
-  .hero-principal {
-    background-color: rgb(22, 31, 63);
+  .index__main {
+    /* Logo del main */
   }
-  .logo-main {
-    width: 400px;
-    height: 400px;
+  .index__main .titulo_index {
+    font-size: 60px;
+    color: rgb(22, 31, 63);
+    text-align: center;
+    font-family: Helvetica-Neue;
+  }
+  .index__main .hero-principal #logoPepes {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    padding: 10px;
+    margin-bottom: 20px;
   }
-  .carousel-inner {
-    background-color: rgb(237, 240, 245);
-  }
-  .carousel-item h2 {
-    font-size: 22px;
+  /*Logo de pepes y h1*/
+  /*Fondo del carousel con desplazamiento automatico*/
+  .carousel-inner p {
+    font-size: 25px;
   }
   /*El carousel de imagenes soló estará disponible para dispositivos moviles*/
   #carouselExample {
     display: none;
+  }
+  /*Botines Adidas Copa del inicio de la pagina*/
+  .botines-copa-main {
+    /*Imagen Adidas copa */
+  }
+  .botines-copa-main .titulo-copa {
+    font-size: 40px;
+  }
+  .botines-copa-main .nombre-copa {
+    font-size: 30px;
+  }
+  .botines-copa-main .info-copa {
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+  }
+  .botines-copa-main #botines__copa__img {
+    width: 700px;
+    height: 650px;
   }
   .titulo_registro {
     font-size: 30px;
@@ -483,7 +568,7 @@
   }
   /* Medias */
   .productos__contenedor__accesorio {
-    font-size: 50px;
+    font-size: 60px;
   }
   .productos__contenedor__modelos__medias {
     margin: 2px;
@@ -493,23 +578,10 @@
   .productos__contenedor__modelos__medias img {
     width: 300px;
     height: 300px;
-    border: 3px rgb(202, 195, 195);
     text-align: center;
   }
   .productos__contenedor__modelos__medias p {
-    font-size: 25px;
-  }
-  /* Canilleras */
-  .productos__contenedor__modelos__canilleras {
-    margin: 2px;
-  }
-  .productos__contenedor__modelos__canilleras img {
-    border: 3px rgb(202, 195, 195);
-    width: 350px;
-    height: 350px;
-  }
-  .productos__contenedor__modelos__canilleras p {
-    font-size: 45px;
+    font-size: 35px;
   }
   /* Precios. Se aplica a Botines, Canilleras y medias */
   .precio {
@@ -527,26 +599,118 @@
     width: 120px;
     height: 120px;
   }
-  .botines__copa {
-    flex-direction: row;
-  }
-  .botines__copa #botines__copa__img {
-    width: 690px;
-    height: 600px;
-  }
   .boton-comprar a {
     font-size: 30px;
   }
   /*Equivalencias*/
+  .talles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+  }
   #talles__niño__img {
     width: 310px;
-    height: 200px;
+    height: 420px;
+    margin: 10px;
   }
   #talles__adulto__img {
-    width: 300px;
-    height: 320px;
+    width: 310px;
+    height: 650px;
+    margin: 10px;
   }
   /* Footer */
+  .card-container .card {
+    margin: 10px;
+  }
+  /*h1 */
+  .titulos {
+    font-size: 40px;
+  }
+  .titulo-equivalencias {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(22, 31, 63);
+    color: white;
+    padding: 10px;
+  }
+  /* h1 para Botines y Medias. Mismas caracteristicas*/
+  .mb-3 {
+    margin: 40px;
+  }
+  body {
+    position: relative;
+    padding-bottom: 17em;
+    min-height: 100vh;
+  }
+  /*Seccion contacto*/
+  .section__main__contacto {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .section__main__contacto .card__contacto {
+    padding: 10px;
+    /*Redes de contacto*/
+    /*Card donde se inserta el mapa de la ubicación del local*/
+  }
+  .section__main__contacto .card__contacto .card__contacto__redes {
+    width: 350px;
+    height: 400px;
+    margin: 5px;
+    font-size: 25px;
+  }
+  .section__main__contacto .card__contacto .card__contacto__ubicacion {
+    width: 350px;
+    height: 400px;
+    font-size: 25px;
+    /*Mapa del local*/
+  }
+  .section__main__contacto .card__contacto .card__contacto__ubicacion iframe {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+  }
+  .card__medida {
+    margin: 5px;
+    padding: 10px;
+    font-size: 25px;
+  }
+  .card__medida__pasos {
+    flex-direction: row;
+    padding: 10px;
+  }
+  .card__medida__pasos img {
+    width: 500px;
+    height: 400px;
+    margin-left: 15px;
+  }
+  .card__medida__pasos p {
+    font-size: 25px;
+  }
+  /*Registro*/
+  .mb-4 {
+    padding: 5px;
+    margin: 5px;
+  }
+  .mb-4 .parrafo_registro {
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pieDePagina {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+  }
   .pieDePagina p {
     font-size: 23px;
   }
@@ -554,35 +718,6 @@
     height: 70px;
     width: 70px;
   }
-}
-.card-container {
-  margin: 50px;
-}
-.card-container .card {
-  margin-right: 10px;
-  margin-bottom: 20px;
-}
-
-/*h1 */
-.titulos {
-  font-size: 45px;
-}
-
-/* h1 para Botines y Medias. Mismas caracteristicas*/
-.mb-3 {
-  margin: 30px;
-}
-
-body {
-  position: relative;
-  padding-bottom: 13em;
-  min-height: 100vh;
-}
-
-.pieDePagina {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

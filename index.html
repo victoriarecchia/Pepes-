@@ -24,7 +24,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/PEPES PEPES.jpeg" type="image/jpeg">
+    <link rel="shortcut icon" href="img/logoPepes.png" type="image/jpeg" id="logoPepes">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <a class="navbar" href="index.html"><img src="img/logoPepes.png" id="logo"></a>
                 <a class="navbar" href="pages/busqueda.html"><img src="img/icons8-search-60.png" alt="..."
                         id="logo-inicio"></a>
@@ -67,41 +67,49 @@
         </nav>
     </header>
 
-    <!-- Contenido principal de la página de inicio -->
     <main class="index__main">
-        <section class="hero align-items-stretch">
-            <div class="hero-principal">
-                <img src="img/logoPepes.png" id="logoPepes" data-aos="fade-right" data-aos-duration="2000">
-            </div>
-            <h1 class="titulo_index">Pepes Botines</h1>
-        </section>
-
+        <!-- Contenido principal de la página de inicio -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <h2>Todos los medios de pago</h2>
+                    <p>Todos los medios de pago</p>
                 </div>
                 <div class="carousel-item">
-                    <h2>Envios a todo el pais</h2>
+                    <p>Envios a todo el pais</p>
                 </div>
                 <div class="carousel-item">
-                    <h2>¡SALE! Hasta 15% OFF</h2>
+                    <p>¡SALE! Hasta 15% OFF</p>
                 </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
 
-        
+        <section class="hero align-items-stretch">
+            <h1 class="titulo_index">Pepes Botines</h1>
+            <div class="hero-principal">
+                <img src="img/logoPepes.png" id="logoPepes" data-aos="fade-right" data-aos-duration="2000">
+            </div>
+
+        </section>
+
+
+
+
         <div id="carouselExample" class="carousel slide">
+            <h2 class="titulo-phantom">Nike Phamtom GX</h2>
+            <p class="info-phantom">Descubri los nuevos Nike Phantom Elite Df. Estos botines están confeccionadas con un
+                revolucionario material Nike Gripknit y proporcionan un mejor toque con un diseño intuitivo que mejora
+                la precisión al golpear y controlar la pelota.</p>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/nike-phantom-rosados.webp " class="d-block w-100" alt="..." id="img-carousel">
@@ -119,13 +127,16 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div>
+
+        <div class="botines-copa-main">
             <h2 class="titulo-copa">HISTORY NEVER DIES</h2>
             <h3 class="nombre-copa">Adidas COPA ICON Fg "Limited Edition"</h3>
+            <p class="info-copa">Este año es el 40 aniversario del lanzamiento de las adidas Copa Mundial, fecha que
+                coincidió con el Mundial de fútbol de España en 1982, con este motivo adidas lanza el remake de aquel
+                mítico modelo en una versión actualizada.</p>
         </div>
         <div class="botines__copa">
-            <img src="img/copa-limited.jpg" alt="..." id="botines__copa__img">
-            <img src="img/copa-limited2.jpg" alt="..." id="botines__copa__img">
+            <img src="img/copa.jpg" alt="..." id="botines__copa__img">
         </div>
         <div class="boton">
             <button class="boton-comprar"><a href="pages/botines.html">Comprar</a></button>
@@ -133,15 +144,11 @@
 
     </main>
 
-
     <!-- Footer -->
     <footer class="pieDePagina">
-        <div>
-            <p>Pepes botines: todo lo que necesitas para tu rendimiento
-                deportivo.</p>
-            <p class="copyright">Copyright | 2023 </p>
-            <a href="index.html"><img src="img/logoPepes.png" id="pieDePagina__logo" /></a>
-        </div>
+        <p>Pepes: todo lo que necesitas para tu rendimiento deportivo. </p>
+        <a href="index.html"><img src="../img/logoPepes.png" id="pieDePagina__logo" /></a>
+        <p class="copyright">Copyright | 2023 </p>
     </footer>
 
     <script>

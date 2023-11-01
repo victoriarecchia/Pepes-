@@ -6,9 +6,19 @@
     color: white;
     padding: 10px;
 }
+
 .parrafo_registro{
-    font-size: 12px;
-}
-.mb-3{
+    font-size: 17px;
     margin: 10px;
+    padding: 10px;
+}
+.container1{
+    @extend %flex-center;
+    text-align: center;
+    .form-label{
+        width: 18rem;
+    }
+    .form-check{
+        margin: 12px;
+    }
 }
