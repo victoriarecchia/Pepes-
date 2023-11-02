@@ -1,17 +1,12 @@
 /* Barra de navegación */
-
 .navbar {
     padding: 10px;
     background-color: rgb(238, 238, 238);
     justify-content: space-between;
-}
+
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
-
-}
-#search-form {
-    display: none;
 }
 
 #navbar:hover #search-form {
@@ -24,7 +19,6 @@
 
 
  /* Alinea las imágenes a la derecha */
-
 .navbar-nav li{
     padding: 6px;
     font-size: 25px;
@@ -33,13 +27,14 @@
 .nav-link{
     font-size: 20px;
     color: black;
-}
-.nav-link:hover{
-    color: rgb(47, 145, 88);
-}
-
-.nav-link:active{
-    color: rgb(59, 59, 155);
+    .nav-link:hover{
+        color: rgb(47, 145, 88);
+    }
+    
+    .nav-link:active{
+        color: rgb(59, 59, 155);
+    }
+    
 }
 
 /* Logo de la navbar*/
@@ -54,4 +49,5 @@
     justify-content: flex-end;
     height: 50px;
     width: 50px;
+}
 }

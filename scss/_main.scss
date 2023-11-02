@@ -11,33 +11,37 @@
 
 /*Propiedades aplicadas al body para que el footer quede sobre el final de la pagina*/
 body {
-    position: relative;
+/*    position: relative;
     padding-bottom: 14em;
-    min-height: 150vh;
+    min-height: 150vh;*/
     background-color: rgb(252, 252, 252);
 }
 
 /*Index*/
 .index__main {
     .titulo_index {
-        font-size: 30px;
-        color: $color-negro;
+        font-size: 40px;
         text-align: center;
         margin: 0px;
-        font-family: $fuente-botines
+        color: $color-azul;
+        padding: 20px;
+        font-family: sans-serif;
     }
 
     /* Logo del main */
     .hero-principal {
+        background-color: white;
+        color: $color-azul;
         @extend %flex-center;
-        flex-direction: column;
+        flex-direction: row;
 
         /*Logo de la pagina*/
-        #logoPepes {
-            width: 180px;
-            height: 180px;
+        #logoPepes-main {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             padding: 10px;
+            margin: 10px;
         }
     }
     .carousel-inner {
@@ -51,7 +55,7 @@ body {
 
     p {
         padding-top: 10px;
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
         color: white;
     }
@@ -59,14 +63,13 @@ body {
 
 
 .info-phantom {
-
-    font-family: $fuente-botines;
+    font-family: Helvetica-Neue;
     background-color: $color-azul;
     color: white;
     text-align: center;
     .titulo-phantom{
         font-size: 35px;
-        font-family: $fuente-botines;   
+        font-family: Helvetica-Neue;   
         text-align: center;
         padding: 10px;
 
@@ -79,7 +82,6 @@ body {
 
 /*Botines Adidas Copa Edicion Limitada*/
 .botines-copa-main {
-    margin: 20px 0;
     background-color: rgb(20, 31, 66);
     .titulo-copa {
         font-family: Helvetica-Neue;
@@ -91,20 +93,21 @@ body {
 
     .nombre-copa {
         font-family: Helvetica-Neue;
-        font-size: 27px;
+        font-size: 30px;
         text-align: center;
         color: $color-blanco;
+        padding: 20px;
     }
     .info-copa {
         background-color: $color-azul;
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px;
         text-align: center;
         color: white;
         cursor: pointer;
     }
     .info-copa2 {
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px;
         text-align: center;
         color: white;
@@ -118,14 +121,12 @@ body {
 
     #botines__copa__img {
         width: 100%;
-        margin-bottom: 10px;
     }
 }
 
 /*Boton comprar Adidas Copa*/
 .boton {
     padding-bottom: 40px;
-    margin: 10px;
     @extend %flex-center;
 
     .boton-comprar {

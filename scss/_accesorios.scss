@@ -1,26 +1,32 @@
 /* MEDIAS */
 .main__accesorios {
-    
-    .card-container.card{
-
+    .accesorios__titulo{
+        text-align: center;
+        font-size: 35px;
+        background-color: rgb(24, 54, 77);
+        color: white;
+        padding: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .card-container.card {
         margin: 20px;
     }
+
     .info-medias {
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-        margin: 10px;
-        font-family: $fuente-botines;
+        padding: 10px;
     }
-
-    .card-title-medias {
-        font-size: 25px;
-        font-weight: 800;
-    }
-
-    /*Precio de las medias*/
-    .precio {
-        font-size: 22px;
-    }
-
-
 }
+
+.card-title-medias {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/*Precio de las medias*/
+.precio {
+    font-size: 22px;
+}
+
+
