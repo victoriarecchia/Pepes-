@@ -1,16 +1,29 @@
-/* MAIN */
-body {
-    position: relative;
-    padding-bottom: 17em;
-    min-height: 200vh;
+
+/*Mismas caracteristicas para los h1 de todas las paginas */
+.titulos{
+    text-align: center;
+    font-size: 35px;
+    background-color: rgb(24, 54, 77);
+    color: white;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*Propiedades aplicadas al body para que el footer quede sobre el final de la pagina*/
+body {
+    position: relative;
+    padding-bottom: 14em;
+    min-height: 150vh;
+    background-color: rgb(252, 252, 252);
+}
+
+/*Index*/
 .index__main {
     .titulo_index {
-        font-size: 40px;
-        color: rgb(13, 25, 92);
+        font-size: 30px;
+        color: $color-negro;
         text-align: center;
-        margin: 10px;
+        margin: 0px;
         font-family: $fuente-botines
     }
 
@@ -19,6 +32,7 @@ body {
         @extend %flex-center;
         flex-direction: column;
 
+        /*Logo de la pagina*/
         #logoPepes {
             width: 180px;
             height: 180px;
@@ -26,18 +40,14 @@ body {
             padding: 10px;
         }
     }
+    .carousel-inner {
+        text-align: center;
+        background-color: rgb(237, 240, 245);
+    }
 }
-
-
-.carousel-inner {
-    text-align: center;
-    background-color: rgb(237, 240, 245);
-}
-
-
 
 .carousel-item {
-    background-color: $color-azul;
+    background-color: rgb(24, 54, 77);
 
     p {
         padding-top: 10px;
@@ -47,42 +57,58 @@ body {
     }
 }
 
-.titulo-phantom {
-    font-family: $fuente-botines;   
-    margin: 10px;
-    text-align: center;
-    font-size: 30px;
-}
 
 .info-phantom {
-    font-size: 20px;
+
     font-family: $fuente-botines;
-    padding-top: 5px;
-    margin: 10px;
+    background-color: $color-azul;
+    color: white;
     text-align: center;
+    .titulo-phantom{
+        font-size: 35px;
+        font-family: $fuente-botines;   
+        text-align: center;
+        padding: 10px;
+
+    }
+    .phantom{
+        font-size: 25px;
+        padding: 10px;
+    }
 }
 
 /*Botines Adidas Copa Edicion Limitada*/
 .botines-copa-main {
+    margin: 20px 0;
+    background-color: rgb(20, 31, 66);
     .titulo-copa {
         font-family: Helvetica-Neue;
         margin: 10px;
         text-align: center;
         font-size: 35px;
+        color: white;
     }
 
     .nombre-copa {
         font-family: Helvetica-Neue;
-        font-size: 25px;
+        font-size: 27px;
         text-align: center;
-
+        color: $color-blanco;
     }
-
     .info-copa {
+        background-color: $color-azul;
         font-size: 20px;
-        font-family: Helvetica-Neue;
         padding: 10px;
         text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+    .info-copa2 {
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
     }
 }
 
@@ -91,24 +117,30 @@ body {
     flex-direction: column;
 
     #botines__copa__img {
-        width: 320px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
 /*Boton comprar Adidas Copa*/
 .boton {
+    padding-bottom: 40px;
+    margin: 10px;
     @extend %flex-center;
 
     .boton-comprar {
-        background-color: #212529;
+        background-color: $color-blanco;
         border-radius: 10px;
-        font-size: 20px;
+        font-size: 25px;
         margin: 10px;
+        padding: 10px;
+        width: 320px;
+
 
         a {
             @extend %flex-center;
             text-decoration: none;
-            color: white;
+            color: black;
         }
     }
 

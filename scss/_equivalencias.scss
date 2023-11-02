@@ -1,49 +1,26 @@
 .titulo-equivalencias {
     text-align: center;
-    font-size: 25px;
-    background-color: $color-azul;
-    color: white;
-    padding: 10px;
+    font-size: 28px;
 }
 
-.talles {
-    margin: 10px;
+.talles{
     @extend %flex-center;
+    margin: 10px;
     flex-direction: column;
+    #tabla-talles-mobile{
+        display: flex;
+        width: auto;
+        height: 800px;
+        padding-bottom: 20px;
 
-    h2 {
-        color: $color-negro;
-        text-align: center;
-        margin-top: 10px;
-        padding-top: 10px;
-        font-size: 30px;
+        
+    }
+    #tabla-talles{
+        display: none;
     }
 
-    .talles__niño {
-        @extend %flex-center;
-        flex-direction: column;
-
-        img {
-            width: 100%;
-            height: 100%;
-            margin: 10px;
-            padding: 10px
-
-        }
-    }
-
-    .talles__adulto {
-        @extend %flex-center;
-        flex-direction: column;
-
-        img {
-            width: 100%;
-            height: 100%;
-            margin: 10px;
-            padding: 10px
-        }
-    }
 }
+
 
 /* Equivalencia de talles*/
 
@@ -56,8 +33,7 @@
     font-size: 20px;
     flex-wrap: wrap;
     .card__medida__titulo{
-        font-weight: 800;
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 

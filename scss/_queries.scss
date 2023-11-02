@@ -1,12 +1,21 @@
 /*El carousel soló se verá para dispositivos moviles*/
 
-@media (min-width: 450px) {
+@media (min-width: 480px) {
     #carouselExample {
+        display: none;
+    }
+
+    .info-phantom {
         display: none;
     }
 }
 
 @media (min-width: 1024px) {
+    body {
+        position: relative;
+        padding-bottom: 12em;
+        min-height: 100vh;
+    }
 
     /* Barra de navegacion */
     .navbar {
@@ -14,30 +23,50 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        .navbar-nav {
+            .nav-link {
+                font-size: 20px;
+                color: black;
+            }
+        }
+    }
+
+    /* Logo de la navbar*/
+    #logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    #logo-inicio {
+        display: flex;
+        justify-content: flex-end;
+        height: 60px;
+        width: 60px;
     }
 
     .index__main {
         .titulo_index {
             font-size: 60px;
-            color: $color-azul;
-            text-align: center;
-            ;
-            font-family: $fuente-botines
         }
 
         /* Logo del main */
         .hero-principal {
             #logoPepes {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
+                width: 220px;
+                height: 220px;
                 margin-bottom: 20px;
             }
         }
     }
 
-    /*Logo de pepes y h1*/
+    /*h1 */
+    .titulos {
+        font-size: 45px;
+    }
 
+    /*Logo de pepes y h1*/
     /*Fondo del carousel con desplazamiento automatico*/
     .carousel-inner {
         p {
@@ -45,57 +74,86 @@
         }
     }
 
-    /*El carousel de imagenes soló estará disponible para dispositivos moviles*/
+    /*El carousel de imagenes de Nike Phantom rosados soló estará disponible para dispositivos moviles*/
     #carouselExample {
         display: none;
+    }
+
+    /*Carousel automatico con promociones*/
+    .carousel-item {
+        p {
+            padding-top: 10px;
+            font-size: 17px;
+        }
     }
 
     /*Botines Adidas Copa del inicio de la pagina*/
     .botines-copa-main {
         .titulo-copa {
-            font-size: 40px;
+            font-size: 60px;
         }
 
         .nombre-copa {
-            font-size: 30px;
+            font-size: 35px;
         }
 
         .info-copa {
+            background-color: white;
+            border-radius: 10px;
             text-align: center;
-            font-size: 25px;
+            font-size: 26px;
             margin: 20px;
+            color: rgb(36, 34, 34);
+            height: 420px;
         }
 
-        /*Imagen Adidas copa */
-        #botines__copa__img {
-            width: 700px;
-            height: 650px;
+        .info-copa2 {
+            background-color: white;
+            font-size: 26px;
+            margin: 22px;
+            text-align: center;
+            color: rgb(36, 34, 34);
+            border-radius: 10px;
+            height: 420px;
+
         }
     }
 
+    .botines__copa {
+        /*Imagen Adidas copa */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        #botines__copa__img {
+            width: 450px;
+            height: 420px;
+            margin: 30px;
+            border-radius: 10px;
+        }
+    }
+
+    .boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .boton-comprar {
+            margin: 30px;
+
+            a {
+                font-size: 30px;
+            }
+        }
+    }
 
     .titulo_registro {
         font-size: 30px;
     }
 
     /* Botines */
-    /* Marca botin */
-    .productos__contenedor__marca {
-        margin-top: 20px;
-    }
 
-    /* Modelo botin */
-    .productos__contenedor__modelos__botin {
-        font-size: 30px;
-        margin: 5px;
-        padding: 1px;
-
-        /* Imagenes botines */
-        img {
-            width: 300px;
-            height: 300px;
-        }
-    }
 
     /* Añadir al carrito */
     .carrito {
@@ -110,21 +168,6 @@
         font-size: 60px;
     }
 
-    .productos__contenedor__modelos__medias {
-        margin: 2px;
-
-        /* Imagenes medias */
-        img {
-            width: 300px;
-            height: 300px;
-            text-align: center;
-        }
-
-        /* Titulo modelo media */
-        p {
-            font-size: 35px;
-        }
-    }
 
     /* Precios. Se aplica a Botines, Canilleras y medias */
     .precio {
@@ -146,66 +189,78 @@
         }
     }
 
-    .boton-comprar {
-        a {
-            font-size: 30px;
-        }
-    }
-
     /*Equivalencias*/
-    .talles {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: row;
-        margin: 20px;
-        padding: 10px;
-    }
-
-    #talles__niño__img {
-        width: 310px;
-        height: 420px;
-        margin: 10px;
-    }
-
-    #talles__adulto__img {
-        width: 310px;
-        height: 650px;
-        margin: 10px;
-    }
-
-    /* Footer */
-
-
-    .card-container {
-        .card {
-            margin: 10px;
-        }
-    }
-
-    /*h1 */
-    .titulos {
-        font-size: 40px;
-    }
 
     .titulo-equivalencias {
         text-align: center;
-        font-size: 40px;
-        background-color: $color-azul;
+        font-size: 35px;
+        background-color: rgb(24, 54, 77);
         color: white;
         padding: 10px;
     }
+
+    .talles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #tabla-talles {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 950px;
+            height: 700px;
+            padding-bottom: 20px;
+        }
+
+        #tabla-talles-mobile {
+            display: none
+        }
+    }
+
+    .card__medida {
+        margin: 5px;
+        padding: 10px;
+        font-size: 18px;
+
+        .card__medida__titulo {
+            font-size: 25px;
+        }
+
+        .card__medida__pasos {
+            flex-direction: row;
+            padding: 10px;
+            width: 950px;
+            font-size: 18px;
+
+            img {
+                width: 500px;
+                height: 400px;
+                margin-left: 15px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+        }
+    }
+
+
+    /*Margen entre cada card de Botines y medias*/
+    .card-container {
+        .card {
+            margin: 30px;
+        }
+    }
+
+
+
 
     /* h1 para Botines y Medias. Mismas caracteristicas*/
     .mb-3 {
         margin: 40px;
     }
 
-    body {
-        position: relative;
-        padding-bottom: 17em;
-        min-height: 100vh;
-    }
 
 
     /*Seccion contacto*/
@@ -216,6 +271,7 @@
 
         .card__contacto {
             padding: 10px;
+
             /*Redes de contacto*/
             .card__contacto__redes {
                 width: 350px;
@@ -240,26 +296,6 @@
         }
     }
 
-    .card__medida {
-        margin: 5px;
-        padding: 10px;
-        font-size: 25px;
-    }
-
-    .card__medida__pasos {
-        flex-direction: row;
-        padding: 10px;
-
-        img {
-            width: 500px;
-            height: 400px;
-            margin-left: 15px;
-        }
-
-        p {
-            font-size: 25px;
-        }
-    }
 
     /*Registro*/
     .mb-4 {
@@ -278,12 +314,13 @@
         flex-direction: column;
         justify-content: center;
     }
-    
+
     .pieDePagina {
         position: absolute;
         bottom: 0;
         width: 100%;
         padding-top: 20px;
+
         p {
             font-size: 23px;
         }
@@ -293,5 +330,4 @@
         height: 70px;
         width: 70px;
     }
-
 }

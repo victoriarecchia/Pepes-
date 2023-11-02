@@ -2,15 +2,12 @@
 
 .navbar {
     padding: 10px;
-    background-color: #eceaea;
+    background-color: rgb(238, 238, 238);
     justify-content: space-between;
-    font-size: 10px;
-
 }
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
 
 }
 #search-form {
@@ -25,33 +22,16 @@
     @extend %flex-center;
 }
 
-#navbar-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-}
 
-.navbar-logo {
-    grid-column: 1;
-}
-
-.navbar-menu {
-    grid-column: 2;
-    text-align: center; /* Alinea el menú en el medio horizontalmente */
-}
-
-.img-navbar {
-    display: grid;
-    grid-column: 3;
-    align-items: center;
  /* Alinea las imágenes a la derecha */
-}
+
 .navbar-nav li{
     padding: 6px;
     font-size: 25px;
 }
 
 .nav-link{
+    font-size: 20px;
     color: black;
 }
 .nav-link:hover{
@@ -61,22 +41,17 @@
 .nav-link:active{
     color: rgb(59, 59, 155);
 }
-/* Boton de busqueda */
-#boton{
-    text-decoration: none;
-    color: green;
-}
 
 /* Logo de la navbar*/
 #logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
 
 #logo-inicio{
     display: flex;
     justify-content: flex-end;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
